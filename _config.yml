@@ -1,7 +1,7 @@
 baseurl: '/Ocoders'
 exclude: ['README.md']
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'Big-O Coders'
 
 collections:
   services:
