@@ -1,5 +1,5 @@
 ---
-title: 'Peter Van Eijk'
+title: 'Sathuri Bharath Kumar'
 image: '/images/team/peter-van-eijk-711986-unsplash.jpg'
 jobtitle: 'Director'
 email: 'peter@test.com'
