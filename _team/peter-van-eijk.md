@@ -1,7 +1,7 @@
 ---
 title: 'Sathuri Bharath Kumar'
 image: '/images/team/peter-van-eijk-711986-unsplash.jpg'
-jobtitle: 'Director'
+jobtitle: 'Developer'
 email: 'peter@test.com'
 linkedinurl: 'https://www.linkedin.com/'
 ---
