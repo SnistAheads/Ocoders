@@ -1,11 +1,14 @@
 ---
-title: 'Accounting'
+title: 'Contest-1'
 image: '/services/noun_591323.png'
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+Its a series of Coding Contests weekly on specific topics open for everyone.
+
+Topics for Contest-1
+#Basic Number Theory #Implementation #strings,#arrays #brute force
+
+link [here](https://www.hackerrank.com/snistcontest1)
 
 ## Ne verba patulosque numen vix libet
 
