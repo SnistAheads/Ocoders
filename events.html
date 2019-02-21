@@ -52,9 +52,9 @@ bodyClass: page-services-list
       <div class="service service-summary">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="{{site.baseurl}}{{ service.url }}">{{ service1.title }}</a>
+            <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
           </h2>
-          {{ service1.content | markdownify | strip_html | truncate: 100 }}
+          {{ service.content | markdownify | strip_html | truncate: 100 }}
         </div>
       </div>
     </div>
