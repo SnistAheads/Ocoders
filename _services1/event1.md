@@ -1,1 +1,32 @@
-### event-1.md
+title	image
+Contest-1
+/services/noun_591323.png
+Its a series of Coding Contests weekly on specific topics open for everyone.
+
+Topics for Contest-1 #Basic Number Theory #Implementation #strings,#arrays #brute force
+
+link here
+
+Ne verba patulosque numen vix libet
+Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis. Ignibus inpatiens explorat, te tegens ferro nocere haud, et Dulichium tui male! Quo sed fuit flexit et hic die solido, gloria?
+
+Cum det dixit Parcarum qui spemque est
+Exit ex huic
+Quod consiste agitataque claustraque vicina videt lacertis
+Loquor videt
+Ardua non igne caelesti coniugis cognovi diversorum
+Per nunc pariterque saeva vindicet
+Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco vati dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa! Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus esse iam feres mortis Plurima.
+
+Postquam tamen
+Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et licet! Inserui quamvis Clymeni.
+
+Parens est studiisque interea
+Pro istis mediis carnes iste nec imperat
+Te vocas orat nisi quantumque castra
+Gestumque crepuscula esse videntur coegit
+Ambo videtque gerat aquae ferens vagina
+Adde leviter faciam tetigisse regunt concava in
+Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas, vis, saxo recepta membra contractosque remigis vulnere vetus parte indignata supera.
+
+Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter somnus, fortius ante ille. Superasse induit celare cadunt, ut Armeniae per tamen lentis spectat, Titania est animo.
