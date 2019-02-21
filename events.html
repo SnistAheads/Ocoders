@@ -49,9 +49,9 @@ bodyClass: page-services-list
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
+      <div class="service1 service1-summary">
+        <div class="service1-content">
+          <h2 class="service1-title">
             <a href="{{site.baseurl}}{{ service1.url }}">{{ service1.title }}</a>
           </h2>
           {{ service1.content | markdownify | strip_html | truncate: 100 }}
