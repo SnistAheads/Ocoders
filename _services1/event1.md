@@ -1,6 +1,7 @@
-title	image
-Contest-1
-/services/noun_591323.png
+---
+title: Contest-1
+image: /services/noun_591323.png
+---
 Its a series of Coding Contests weekly on specific topics open for everyone.
 
 Topics for Contest-1 #Basic Number Theory #Implementation #strings,#arrays #brute force
