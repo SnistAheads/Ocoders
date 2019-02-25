@@ -10,44 +10,183 @@ Topics for Contest-1
 
 link [here](https://www.hackerrank.com/snistcontest1)
 
-## Ne verba patulosque numen vix libet
+**SOLUTIONS FOR CONTEST-1**
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+**1.Decorate Tree**
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
+Consider some solution Y, B, R, where Y+1=B and B+1=R. Let's add two yellow ornaments and one blue both to the solution and to the reserve, then we have Y=B=R. We can see that this new problem is equivalent to the old one. In this problem, the best solution is achieved when we use min(y,b,r) ornaments of each colour. Hence, we can find the said minimum, multiply by three and then remove the three extra ornaments again.
 
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
 
-## Postquam tamen
+code: 
+(c++ , see the logic if u dont know c++ syntax)
 
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
+{% highlight c++ %}
+#include <bits/stdc++.h>
+using namespace std;
 
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << min(a + 2, min(b + 1, c)) * 3 - 3;
+}
+{% endhighlight %}
 
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
+**2.Repeating characters**
+There are many possible approaches in this problem, I will describe one of the easiest.
 
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+Let's print the initial string by the following algorithm: firstly, init the variable i=1. Then, while the encrypted string isn't empty, print the first character of this string, remove i first characters from it and increase i by one.
+
+c++ code:
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
+    int index = 0;
+    int gap = 1;
+    while (index < n)
+        cout << s[index], index += gap, gap++;
+}
+
+**3.Pieces of land**
+https://www.hackerrank.com/challenges/restaurant/editorial
+
+
+4.Direction of Wind
+
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+    map<char,ll> m;
+    map<ll,char> m1;
+    m['N']=0;m['W']=1;m['S']=2;m['E']=3;
+    m1[0]='N';m1[1]='W';m1[2]='S';m1[3]='E';
+    ll mm,n;
+    cin>>mm>>n;
+    ll a[mm][n];
+    ll i,j;
+    for(i=0;i<mm;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            char c;
+            cin>>c;
+            a[i][j]=m[c];
+        }
+    }
+    ll query;
+    cin>>query;
+    while(query--)
+    {
+        char c;
+        cin>>c;
+        if(c=='C')
+        {
+            ll x1,y1,x2,y2,dir;
+            cin>>x1>>y1>>x2>>y2>>dir;
+            for(i=x1-1;i<=x2-1;i++)
+            {
+                for(j=y1-1;j<=y2-1;j++)
+                {
+                    if(dir==0)
+                    {
+                        a[i][j]--;
+                        if(a[i][j]<0)
+                            a[i][j]=3;
+                    }
+                    else
+                    {
+                        a[i][j]=(a[i][j]+1)%4;
+                    }
+                }
+            }
+        }
+        else
+        {
+            ll x,y;
+            cin>>x>>y;
+            cout<<(m1[a[x-1][y-1]])<<endl;
+            
+        }
+    }
+}
+
+
+**5.Prime Sequence **
+
+hint: learn sieve of erasthones for finding primes...
+code:
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+ll findi[10000001];
+ll dp[10000001];
+void sieve()
+{
+    ll i,j;
+    for(i=2;i<=10000000;i++)
+    {
+        if(findi[i]==0)
+        {
+            findi[i]=i;
+            for(j=i*i;j<=10000000;j+=i){
+                if(findi[j]==0)
+                    findi[j]=i;
+            }
+        }
+        dp[i]=dp[i-1]+findi[i];
+    }
+}
+int main()
+{
+    sieve();
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll n;
+        cin>>n;
+        cout<<dp[n]<<endl;
+    }
+}
+**6.Divisors of Two Integers** 
+Let's take a look on the maximum element of the given array. Suddenly, this number is x (or y, the order doesn't matter). Okay, what would we do if we know x and merged list of divisors of x and y? Let's remove all divisors of x and see what we got. The maximum element in the remaining array is y. So, the problem is solved.
+
+code:
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+#ifdef _DEBUG
+	freopen("input.txt", "r", stdin);
+//	freopen("output.txt", "w", stdout);
+#endif
+	
+	int n;
+	cin >> n;
+	multiset<int> a;
+	for (int i = 0; i < n; ++i) {
+		int x;
+		cin >> x;
+		a.insert(x);
+	}
+	
+	int x = *prev(a.end());
+	for (int i = 1; i <= x; ++i) {
+		if (x % i == 0) {
+			a.erase(a.find(i));
+		}
+	}
+	
+	cout << x << " " << *prev(a.end()) << endl;
+	
+	return 0;
+}
+
