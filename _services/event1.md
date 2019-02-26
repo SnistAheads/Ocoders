@@ -59,7 +59,7 @@ int main() {
 https://www.hackerrank.com/challenges/restaurant/editorial
 
 
-4.Direction of Wind
+**4.Direction of Wind**
 {% highlight c++ %}
 
 #include<bits/stdc++.h>
@@ -123,7 +123,7 @@ int main()
 
 {% endhighlight %}
 
-**5.Prime Sequence **
+**5.Prime Sequence**
 
 hint: learn sieve of erasthones for finding primes...
 code:
