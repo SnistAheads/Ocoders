@@ -2,6 +2,7 @@ baseurl: '/Ocoders'
 exclude: ['README.md']
 permalink: pretty
 title: 'Big-O Coders'
+highlighter: rouge
 
 collections:
   services:
