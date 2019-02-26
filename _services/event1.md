@@ -37,6 +37,7 @@ There are many possible approaches in this problem, I will describe one of the e
 Let's print the initial string by the following algorithm: firstly, init the variable i=1. Then, while the encrypted string isn't empty, print the first character of this string, remove i first characters from it and increase i by one.
 
 c++ code:
+{% highlight c++ %}
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -51,12 +52,15 @@ int main() {
     while (index < n)
         cout << s[index], index += gap, gap++;
 }
+{% endhighlight %}
+
 
 **3.Pieces of land**
 https://www.hackerrank.com/challenges/restaurant/editorial
 
 
 4.Direction of Wind
+{% highlight c++ %}
 
 #include<bits/stdc++.h>
 #define ll long long
@@ -117,11 +121,14 @@ int main()
     }
 }
 
+{% endhighlight %}
 
 **5.Prime Sequence **
 
 hint: learn sieve of erasthones for finding primes...
 code:
+{% highlight c++ %}
+
 #include<bits/stdc++.h>
 #define ll long long
 using namespace std;
@@ -155,10 +162,14 @@ int main()
         cout<<dp[n]<<endl;
     }
 }
+{% endhighlight %}
+
 **6.Divisors of Two Integers** 
 Let's take a look on the maximum element of the given array. Suddenly, this number is x (or y, the order doesn't matter). Okay, what would we do if we know x and merged list of divisors of x and y? Let's remove all divisors of x and see what we got. The maximum element in the remaining array is y. So, the problem is solved.
 
 code:
+{% highlight cpp %}
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -168,7 +179,6 @@ int main() {
 	freopen("input.txt", "r", stdin);
 //	freopen("output.txt", "w", stdout);
 #endif
-	
 	int n;
 	cin >> n;
 	multiset<int> a;
@@ -177,16 +187,14 @@ int main() {
 		cin >> x;
 		a.insert(x);
 	}
-	
 	int x = *prev(a.end());
 	for (int i = 1; i <= x; ++i) {
 		if (x % i == 0) {
 			a.erase(a.find(i));
 		}
 	}
-	
 	cout << x << " " << *prev(a.end()) << endl;
-	
 	return 0;
 }
+{% endhighlight %}
 
