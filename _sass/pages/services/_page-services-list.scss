@@ -1,18 +1,18 @@
 .page-services-list {
   background-image: url('https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
   background-repeat: no-repeat;
-  background-size: 115%;
+  background-size: 100%;
   background-position: 49px -40px;
   @include media-breakpoint-up(sm) {
-    background-size: 90%;
+    background-size: 100%;
     background-position: 159px -40px;
   }
   @include media-breakpoint-up(md) {
-    background-size: 85%;
+    background-size: 100%;
     background-position: 199px -80px;
   }
   @include media-breakpoint-up(lg) {
-    background-size: 60%;
+    background-size: 100%;
     background-position: 100% -110px;
   }
 }
